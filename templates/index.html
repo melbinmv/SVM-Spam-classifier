@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detection</title>
+</head>
+<body>
+    <h1>Spam Detection</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <label for="message">Enter a message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Check">
+    </form>
+    <br>
+    <p>Prediction: {{ predicted_result}}</p>
+    <p>Probability of being spam: {{spam_probability}}</p>
+</body>
+</html>
