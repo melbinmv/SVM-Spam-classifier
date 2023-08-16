@@ -14,7 +14,7 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 # Load the saved SVM model
-stopwords = nltk.corpus.stopwords.words('english')
+# stopwords = nltk.corpus.stopwords.words('english')
 loaded_model = load("svm_model.pkl") 
 loaded_cv_vectorizer = load('cv.joblib')
 
